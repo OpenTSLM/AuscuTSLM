@@ -1,0 +1,115 @@
+{
+  "checkpoint": "CaReQA evaluation (careqa_test_predictions.jsonl) - RECOMPUTED",
+  "total_samples": 6496,
+  "recomputed": true,
+  "open_ended_accuracy": 19.196428571428573,
+  "normalised_accuracy": 20.42795566502463,
+  "contains_match_accuracy": 34.85221674876847,
+  "rougeL_f1": 0.6117143486979785,
+  "meteor": 0.5106992095143529,
+  "bert_score_f1": 0.9422681331634521,
+  "bert_score_precision": 0.9411436319351196,
+  "bert_score_recall": 0.9439888000488281,
+  "closed_ended_yes_no": {
+    "accuracy": 0.9312054539820267,
+    "f1_macro": 0.8458946189151096,
+    "f1_weighted": 0.9260889357606038,
+    "sensitivity": 0.622680412371134,
+    "specificity": 0.9857768052516411,
+    "correct": 3005,
+    "evaluated": 3227,
+    "skipped_not_binary_question": 3178,
+    "pred_unparseable": 91,
+    "label_counts": {
+      "gold_yes": 485,
+      "gold_no": 2742,
+      "pred_yes": 341,
+      "pred_no": 2886
+    }
+  },
+  "elapsed_recompute_seconds": 17.53519630432129,
+  "per_dataset": {
+    "CirCor": {
+      "total": 499,
+      "open_ended_acc": 11.22244488977956,
+      "norm_acc": 11.22244488977956,
+      "contains_acc": 16.432865731462925,
+      "rougeL_f1": 0.6601021947869324,
+      "meteor": 0.5998959052808092,
+      "bert_f1": 0.950658813984934,
+      "yes_no": {
+        "total_binary_qs": 215,
+        "correct": 191,
+        "parseable": 215,
+        "unparseable": 26,
+        "accuracy_all": 88.83720930232558,
+        "gold_yes": 27,
+        "gold_no": 188
+      }
+    },
+    "ICBHI": {
+      "total": 4645,
+      "open_ended_acc": 21.356297093649086,
+      "norm_acc": 23.078579117330463,
+      "contains_acc": 41.72228202368138,
+      "rougeL_f1": 0.6215518632965744,
+      "meteor": 0.5095772847836275,
+      "bert_f1": 0.9414502632117503,
+      "yes_no": {
+        "total_binary_qs": 1925,
+        "correct": 1808,
+        "parseable": 1925,
+        "unparseable": 65,
+        "accuracy_all": 93.92207792207792,
+        "gold_yes": 140,
+        "gold_no": 1785
+      }
+    },
+    "KAUH": {
+      "total": 153,
+      "open_ended_acc": 7.18954248366013,
+      "norm_acc": 7.18954248366013,
+      "contains_acc": 8.49673202614379,
+      "rougeL_f1": 0.26875249619133534,
+      "meteor": 0.15641035963856156,
+      "bert_f1": 0.8987423668499865,
+      "yes_no": null
+    },
+    "SPRSound": {
+      "total": 817,
+      "open_ended_acc": 5.263157894736842,
+      "norm_acc": 5.263157894736842,
+      "contains_acc": 9.547123623011016,
+      "rougeL_f1": 0.526187181553884,
+      "meteor": 0.4277640859956661,
+      "bert_f1": 0.9384750448796565,
+      "yes_no": {
+        "total_binary_qs": 767,
+        "correct": 690,
+        "parseable": 767,
+        "unparseable": 0,
+        "accuracy_all": 89.96088657105607,
+        "gold_yes": 191,
+        "gold_no": 576
+      }
+    },
+    "ZCHSound": {
+      "total": 382,
+      "open_ended_acc": 37.95811518324607,
+      "norm_acc": 37.95811518324607,
+      "contains_acc": 40.05235602094241,
+      "rougeL_f1": 0.7491700253508131,
+      "meteor": 0.7271033433691041,
+      "bert_f1": 0.9667965727638824,
+      "yes_no": {
+        "total_binary_qs": 320,
+        "correct": 316,
+        "parseable": 320,
+        "unparseable": 0,
+        "accuracy_all": 98.75,
+        "gold_yes": 127,
+        "gold_no": 193
+      }
+    }
+  }
+}

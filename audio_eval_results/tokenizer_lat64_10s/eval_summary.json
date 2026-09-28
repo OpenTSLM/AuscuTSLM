@@ -1,0 +1,129 @@
+{
+  "checkpoint": "/home/coder/projects/AudioTSLM/audio_checkpoints_v5/tokenizer_lat64_10s/tokenizer_stage1_caresound_qa/best_model.pt",
+  "encoder": "tokenizer",
+  "llm_id": "meta-llama/Llama-3.2-1B",
+  "max_audio_length": 160000,
+  "max_audio_seconds": 10.0,
+  "total_samples": 6496,
+  "open_ended_accuracy": 27.370689655172413,
+  "normalised_accuracy": 28.294334975369456,
+  "contains_match_accuracy": 39.501231527093594,
+  "bert_score_f1": 0.9457133989414117,
+  "bert_score_precision": 0.9481272146821462,
+  "bert_score_recall": 0.944031646135699,
+  "rougeL_f1": 0.638717700641806,
+  "meteor": 0.6071966055697626,
+  "closed_ended_yes_no": {
+    "accuracy": 0.9110100682039624,
+    "f1_macro": 0.8035982672147115,
+    "f1_weighted": 0.9032737768722815,
+    "sensitivity": 0.546583850931677,
+    "specificity": 0.9788135593220338,
+    "correct": 2805,
+    "evaluated": 3079,
+    "skipped_not_binary_question": 3384,
+    "skipped_not_yes_no": 33,
+    "skipped_cannot_derive_label": 33,
+    "pred_unparseable": 0,
+    "label_counts": {
+      "gold_yes": 483,
+      "gold_no": 2596,
+      "pred_yes": 319,
+      "pred_no": 2760
+    }
+  },
+  "elapsed_seconds": 18512.50387263298,
+  "max_new_tokens": 128,
+  "per_dataset": {
+    "CirCor": {
+      "total": 499,
+      "open_ended_acc": 9.619238476953909,
+      "norm_acc": 9.819639278557114,
+      "contains_match_acc": 13.226452905811623,
+      "rougeL_f1": 0.6371611185949649,
+      "meteor": 0.61634049340476,
+      "bert_f1": 0.9459222852586505,
+      "yes_no": {
+        "total_binary_qs": 209,
+        "correct": 183,
+        "parseable": 209,
+        "unparseable": 0,
+        "accuracy_all": 87.5598086124402,
+        "accuracy_parseable": 87.5598086124402,
+        "parseable_rate": 100.0,
+        "gold_yes": 26,
+        "gold_no": 183
+      }
+    },
+    "ICBHI": {
+      "total": 4645,
+      "open_ended_acc": 30.032292787944026,
+      "norm_acc": 30.613562970936492,
+      "contains_match_acc": 45.769644779332616,
+      "rougeL_f1": 0.6410430661726363,
+      "meteor": 0.607212016693945,
+      "bert_f1": 0.9456201785090665,
+      "yes_no": {
+        "total_binary_qs": 1785,
+        "correct": 1651,
+        "parseable": 1785,
+        "unparseable": 0,
+        "accuracy_all": 92.49299719887955,
+        "accuracy_parseable": 92.49299719887955,
+        "parseable_rate": 100.0,
+        "gold_yes": 140,
+        "gold_no": 1645
+      }
+    },
+    "KAUH": {
+      "total": 153,
+      "open_ended_acc": 32.02614379084967,
+      "norm_acc": 47.05882352941176,
+      "contains_match_acc": 48.36601307189542,
+      "rougeL_f1": 0.5417987663555069,
+      "meteor": 0.3217737712988755,
+      "bert_f1": 0.897460344570135,
+      "yes_no": null
+    },
+    "SPRSound": {
+      "total": 817,
+      "open_ended_acc": 20.31823745410037,
+      "norm_acc": 20.31823745410037,
+      "contains_match_acc": 20.4406364749082,
+      "rougeL_f1": 0.6071590096687925,
+      "meteor": 0.5986496149617292,
+      "bert_f1": 0.950460857539603,
+      "yes_no": {
+        "total_binary_qs": 766,
+        "correct": 693,
+        "parseable": 766,
+        "unparseable": 0,
+        "accuracy_all": 90.46997389033943,
+        "accuracy_parseable": 90.46997389033943,
+        "parseable_rate": 100.0,
+        "gold_yes": 190,
+        "gold_no": 576
+      }
+    },
+    "ZCHSound": {
+      "total": 382,
+      "open_ended_acc": 31.413612565445025,
+      "norm_acc": 33.7696335078534,
+      "contains_match_acc": 34.81675392670157,
+      "rougeL_f1": 0.7187895828968387,
+      "meteor": 0.7276630984198108,
+      "bert_f1": 0.9557469546482825,
+      "yes_no": {
+        "total_binary_qs": 319,
+        "correct": 278,
+        "parseable": 319,
+        "unparseable": 0,
+        "accuracy_all": 87.14733542319749,
+        "accuracy_parseable": 87.14733542319749,
+        "parseable_rate": 100.0,
+        "gold_yes": 127,
+        "gold_no": 192
+      }
+    }
+  }
+}

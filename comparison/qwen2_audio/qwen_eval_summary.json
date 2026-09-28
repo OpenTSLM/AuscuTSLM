@@ -1,0 +1,87 @@
+{
+  "model_id": "Qwen/Qwen2-Audio-7B-Instruct",
+  "model_family": "qwen2_audio",
+  "mode": "standard",
+  "num_shots": 0,
+  "fine_tuned": false,
+  "total_samples": 6496,
+  "skipped_no_audio": 0,
+  "open_ended_accuracy": 0.6311576354679803,
+  "normalised_accuracy": 0.646551724137931,
+  "contains_match_accuracy": 4.3257389162561575,
+  "bert_score_f1": 0.8996089432076574,
+  "bert_score_precision": 0.8885351473493088,
+  "bert_score_recall": 0.9120254887295474,
+  "rouge1_f1": 0.3187639616851531,
+  "rouge2_f1": 0.16923358614996192,
+  "rougeL_f1": 0.2951062015672903,
+  "meteor": 0.3591579281199305,
+  "closed_ended_yes_no": {
+    "accuracy": 0.17830464436505358,
+    "f1_macro": 0.17120366642635781,
+    "f1_weighted": 0.11855676683174676,
+    "sensitivity": 0.8633540372670807,
+    "specificity": 0.05084745762711865,
+    "correct": 549,
+    "evaluated": 3079,
+    "skipped_not_binary_question": 3384,
+    "skipped_not_yes_no": 33,
+    "skipped_cannot_derive_label": 33,
+    "pred_unparseable": 324,
+    "label_counts": {
+      "gold_yes": 483,
+      "gold_no": 2596,
+      "pred_yes": 2881,
+      "pred_no": 198
+    }
+  },
+  "elapsed_seconds": 2899.269017934799,
+  "max_new_tokens": 128,
+  "per_dataset": {
+    "CirCor": {
+      "total": 499,
+      "open_ended_acc": 0.0,
+      "norm_acc": 0.0,
+      "contains_acc": 4.008016032064128,
+      "rougeL_f1": 0.2998730584537669,
+      "meteor": 0.36827617597629936,
+      "bert_f1": 0.9010777502117272
+    },
+    "ICBHI": {
+      "total": 4645,
+      "open_ended_acc": 0.25834230355220666,
+      "norm_acc": 0.25834230355220666,
+      "contains_acc": 3.789020452099031,
+      "rougeL_f1": 0.2871104576756888,
+      "meteor": 0.34575856736219523,
+      "bert_f1": 0.8972247260892353
+    },
+    "KAUH": {
+      "total": 153,
+      "open_ended_acc": 0.0,
+      "norm_acc": 0.0,
+      "contains_acc": 8.49673202614379,
+      "rougeL_f1": 0.060490619674080266,
+      "meteor": 0.062208783557430126,
+      "bert_f1": 0.8499539841234295
+    },
+    "SPRSound": {
+      "total": 817,
+      "open_ended_acc": 1.7135862913096693,
+      "norm_acc": 1.7135862913096693,
+      "contains_acc": 5.752753977968176,
+      "rougeL_f1": 0.320383139041361,
+      "meteor": 0.42335114813962577,
+      "bert_f1": 0.9138272684819841
+    },
+    "ZCHSound": {
+      "total": 382,
+      "open_ended_acc": 3.926701570680628,
+      "norm_acc": 4.18848167539267,
+      "contains_acc": 6.544502617801047,
+      "rougeL_f1": 0.42601325628844744,
+      "meteor": 0.4918212354532397,
+      "bert_f1": 0.9161602280526885
+    }
+  }
+}
