@@ -1,0 +1,79 @@
+#
+# This source file is part of the AuscuTSLM project, built on OpenTSLM
+#
+# SPDX-FileCopyrightText: 2025 ETH Zurich, Stanford University, and the project authors (see CONTRIBUTORS.md)
+#
+# SPDX-License-Identifier: MIT
+#
+
+message: "If you use this software or model, please cite it as below."
+title: "AuscuQA: Patient-Level Multimodal Question Answering from Multi-Site Auscultation Recordings"
+authors:
+  - family-names: "Wu"
+    given-names: "Fan"
+    affiliation: "ETH Zurich"
+  - family-names: "Wang"
+    given-names: "Tsai-Ning"
+    affiliation: "TU Eindhoven"
+  - family-names: "Zumarraga"
+    given-names: "Nicolas"
+    affiliation: "ETH Zurich"
+  - family-names: "Wang"
+    given-names: "Ning"
+    affiliation: "ETH Zurich"
+  - family-names: "Manso Zorrilla"
+    given-names: "Paula"
+  - family-names: "Kreft"
+    given-names: "Markus"
+    affiliation: "ETH Zurich"
+  - family-names: "O'Sullivan"
+    given-names: "Kevin"
+    affiliation: "ETH Zurich"
+  - family-names: "Fleisch"
+    given-names: "Elgar"
+    affiliation: "ETH Zurich / University of St. Gallen"
+  - family-names: "Aalami"
+    given-names: "Oliver"
+    affiliation: "Stanford University"
+  - family-names: "Schmiedmayer"
+    given-names: "Paul"
+    affiliation: "Stanford University"
+  - family-names: "Jakob"
+    given-names: "Robert"
+    affiliation: "ETH Zurich"
+  - family-names: "Langer"
+    given-names: "Patrick"
+    affiliation: "ETH Zurich / Stanford University"
+date-released: "2026-09-21"
+preferred-citation:
+  type: article
+  title: "Patient-Level Multimodal Question Answering from Multi-Site Auscultation Recordings"
+  authors:
+    - family-names: "Wu"
+      given-names: "F."
+    - family-names: "Wang"
+      given-names: "T.N."
+    - family-names: "Zumarraga"
+      given-names: "N."
+    - family-names: "Wang"
+      given-names: "N."
+    - family-names: "Kreft"
+      given-names: "M."
+    - family-names: "O'Sullivan"
+      given-names: "K."
+    - family-names: "Fleisch"
+      given-names: "E."
+    - family-names: "Aalami"
+      given-names: "O."
+    - family-names: "Schmiedmayer"
+      given-names: "P."
+    - family-names: "Jakob"
+      given-names: "R."
+    - family-names: "Langer"
+      given-names: "P."
+  year: 2026
+  identifiers:
+    - type: other
+      value: "arXiv:2603.13362"
+      description: "arXiv preprint"
+  url: "https://arxiv.org/abs/2603.13362"

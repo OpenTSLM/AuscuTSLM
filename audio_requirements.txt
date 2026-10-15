@@ -1,0 +1,21 @@
+# Additional requirements for Audio Language Model extension
+# Install with: pip install -r audio_requirements.txt
+
+# Core audio processing
+torchaudio>=2.0.0
+librosa>=0.10.0
+
+# Pretrained models
+transformers>=4.30.0
+
+# Dataset utilities
+datasets>=2.14.0
+pandas>=1.5.0
+
+# Audio file handling
+soundfile>=0.12.0
+audioread>=3.0.0
+
+# Optional: for advanced audio processing
+# scipy>=1.10.0
+# resampy>=0.4.0

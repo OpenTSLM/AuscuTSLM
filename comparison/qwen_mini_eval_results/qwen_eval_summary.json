@@ -1,0 +1,121 @@
+{
+  "checkpoint": null,
+  "encoder": "qwen_omni",
+  "llm_id": "Qwen/Qwen2.5-Omni-7B",
+  "max_audio_length": null,
+  "max_audio_seconds": null,
+  "max_new_tokens": 128,
+  "elapsed_seconds": 0.5355648994445801,
+  "total_samples": 6495,
+  "recomputed": true,
+  "open_ended_accuracy": 0.0,
+  "normalised_accuracy": 2.0477290223248654,
+  "contains_match_accuracy": 6.743648960739031,
+  "rougeL_f1": 0.13510212442664318,
+  "meteor": 0.2276422732128239,
+  "bert_score_f1": 0.8648130893707275,
+  "bert_score_precision": 0.8340347409248352,
+  "bert_score_recall": 0.8983733057975769,
+  "closed_ended_yes_no": {
+    "accuracy": 0.8461538461538461,
+    "f1_macro": 0.5230232984773436,
+    "f1_weighted": 0.8093109238954039,
+    "sensitivity": 0.08522727272727272,
+    "specificity": 0.9653024911032029,
+    "correct": 1100,
+    "evaluated": 1300,
+    "skipped_not_binary_question": 3414,
+    "pred_unparseable": 1781,
+    "label_counts": {
+      "gold_yes": 176,
+      "gold_no": 1124,
+      "pred_yes": 54,
+      "pred_no": 1246
+    }
+  },
+  "elapsed_recompute_seconds": 30.583451747894287,
+  "per_dataset": {
+    "CirCor": {
+      "total": 499,
+      "open_ended_acc": 0.0,
+      "norm_acc": 1.402805611222445,
+      "contains_acc": 3.006012024048096,
+      "rougeL_f1": 0.15151159180025736,
+      "meteor": 0.2530781760263147,
+      "bert_f1": 0.8721022214105947,
+      "yes_no": {
+        "total_binary_qs": 62,
+        "correct": 58,
+        "parseable": 62,
+        "unparseable": 148,
+        "accuracy_all": 93.54838709677419,
+        "gold_yes": 8,
+        "gold_no": 54
+      }
+    },
+    "ICBHI": {
+      "total": 4644,
+      "open_ended_acc": 0.0,
+      "norm_acc": 2.7131782945736433,
+      "contains_acc": 8.914728682170542,
+      "rougeL_f1": 0.1360140481422961,
+      "meteor": 0.23302591301084621,
+      "bert_f1": 0.8629110658944013,
+      "yes_no": {
+        "total_binary_qs": 996,
+        "correct": 896,
+        "parseable": 996,
+        "unparseable": 790,
+        "accuracy_all": 89.95983935742971,
+        "gold_yes": 72,
+        "gold_no": 924
+      }
+    },
+    "KAUH": {
+      "total": 153,
+      "open_ended_acc": 0.0,
+      "norm_acc": 0.0,
+      "contains_acc": 3.9215686274509802,
+      "rougeL_f1": 0.009515097299647184,
+      "meteor": 0.024144760230968645,
+      "bert_f1": 0.8114678528573778,
+      "yes_no": null
+    },
+    "SPRSound": {
+      "total": 817,
+      "open_ended_acc": 0.0,
+      "norm_acc": 0.0,
+      "contains_acc": 0.12239902080783352,
+      "rougeL_f1": 0.14238701452778027,
+      "meteor": 0.2134943487983155,
+      "bert_f1": 0.8781029725745959,
+      "yes_no": {
+        "total_binary_qs": 240,
+        "correct": 145,
+        "parseable": 240,
+        "unparseable": 526,
+        "accuracy_all": 60.416666666666664,
+        "gold_yes": 94,
+        "gold_no": 146
+      }
+    },
+    "ZCHSound": {
+      "total": 382,
+      "open_ended_acc": 0.0,
+      "norm_acc": 0.0,
+      "contains_acc": 0.5235602094240838,
+      "rougeL_f1": 0.1373004542247531,
+      "meteor": 0.2407308465293874,
+      "bert_f1": 0.8713569274435493,
+      "yes_no": {
+        "total_binary_qs": 2,
+        "correct": 1,
+        "parseable": 2,
+        "unparseable": 317,
+        "accuracy_all": 50.0,
+        "gold_yes": 2,
+        "gold_no": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+# SPDX-FileCopyrightText: 2025 Stanford University, ETH Zurich, and the project authors (see CONTRIBUTORS.md)
+# SPDX-FileCopyrightText: 2025 This source file is part of the OpenTSLM open-source project.
+#
+# SPDX-License-Identifier: MIT
+
+.venv
+.vscode
+__pycache__
+.DS_STORE
+
+raw_data
+
+**/data/*
+!**/data/.gitkeep
+!data/caresound_patient_splits.json
+
+*.ts
+*.zip
+upload_to_huggingface.py
+
+dist/
+
+*.license
+
+# Model checkpoints & weights (large binary files)
+audio_checkpoints/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+
+# Training logs
+audio_logs/
+
+.pdf
+
+CHECKPOINTS_INVENTORY.md
+
+# Presentation/talk materials (not part of the reproducible pipeline)
+presentation_assets/
+scripts/presentation/
+
+# Full eval results (all configs incl. CoT/latent/context ablations, with
+# per-sample predictions) — kept locally, not tracked. The curated subset
+# actually reported in the paper (summaries only) lives in audio_eval_results/.
+audio_eval_results_v5/

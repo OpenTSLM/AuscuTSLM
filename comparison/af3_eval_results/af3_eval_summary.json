@@ -1,0 +1,87 @@
+{
+  "model_id": "nvidia/audio-flamingo-3-hf",
+  "model_type": "NVIDIA Audio Flamingo 3 (AF3-7B)",
+  "mode": "standard",
+  "num_shots": 0,
+  "fine_tuned": false,
+  "total_samples": 6496,
+  "skipped_no_audio": 0,
+  "open_ended_accuracy": 1.8318965517241377,
+  "normalised_accuracy": 2.601600985221675,
+  "contains_match_accuracy": 5.511083743842365,
+  "bert_score_f1": 0.885054858777617,
+  "bert_score_precision": 0.882841256635236,
+  "bert_score_recall": 0.888014536002293,
+  "rouge1_f1": 0.30568765310050816,
+  "rouge2_f1": 0.14710604911421288,
+  "rougeL_f1": 0.2882656836928246,
+  "meteor": 0.2842439911251532,
+  "careqa_closed_ended": {
+    "accuracy": 0.8499512828840533,
+    "f1_macro": 0.5447715053763441,
+    "f1_weighted": 0.8005608230573394,
+    "sensitivity": 0.09937888198757763,
+    "specificity": 0.9895993836671803,
+    "correct": 2617,
+    "evaluated": 3079,
+    "skipped_not_binary_question": 3384,
+    "skipped_not_yes_no": 33,
+    "skipped_cannot_derive_label": 33,
+    "pred_unparseable": 3,
+    "label_counts": {
+      "gold_yes": 483,
+      "gold_no": 2596,
+      "pred_yes": 75,
+      "pred_no": 3004
+    }
+  },
+  "elapsed_seconds": 1691.9461119174957,
+  "max_new_tokens": 256,
+  "per_dataset": {
+    "CirCor": {
+      "total": 499,
+      "open_ended_acc": 3.2064128256513023,
+      "norm_acc": 3.2064128256513023,
+      "contains_acc": 7.414829659318638,
+      "rougeL_f1": 0.4290082197162041,
+      "meteor": 0.41660883897894074,
+      "bert_f1": 0.9089897347834401
+    },
+    "ICBHI": {
+      "total": 4645,
+      "open_ended_acc": 0.9041980624327234,
+      "norm_acc": 1.9806243272335846,
+      "contains_acc": 4.3057050592034445,
+      "rougeL_f1": 0.26065298526282005,
+      "meteor": 0.2460868410147264,
+      "bert_f1": 0.8781052992341336
+    },
+    "KAUH": {
+      "total": 153,
+      "open_ended_acc": 0.0,
+      "norm_acc": 0.0,
+      "contains_acc": 5.88235294117647,
+      "rougeL_f1": 0.05726766475073345,
+      "meteor": 0.06890979886867714,
+      "bert_f1": 0.8518160192015903
+    },
+    "SPRSound": {
+      "total": 817,
+      "open_ended_acc": 0.7343941248470013,
+      "norm_acc": 0.7343941248470013,
+      "contains_acc": 2.8151774785801713,
+      "rougeL_f1": 0.31797221103364215,
+      "meteor": 0.3555612311020148,
+      "bert_f1": 0.9005691089565926
+    },
+    "ZCHSound": {
+      "total": 382,
+      "open_ended_acc": 14.397905759162304,
+      "norm_acc": 14.397905759162304,
+      "contains_acc": 23.298429319371728,
+      "rougeL_f1": 0.4691633873378432,
+      "meteor": 0.5090341731619008,
+      "bert_f1": 0.9184255420537519
+    }
+  }
+}

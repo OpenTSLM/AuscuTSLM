@@ -1,0 +1,98 @@
+# SPDX-FileCopyrightText: 2025 Stanford University, ETH Zurich, and the project authors (see CONTRIBUTORS.md)
+# SPDX-FileCopyrightText: 2025 This source file is part of the OpenTSLM open-source project.
+#
+# SPDX-License-Identifier: MIT
+
+[project]
+name = "auscutslm"
+version = "0.1.0"
+description = "AuscuTSLM: Time-Series Language Models for Auscultation Audio (AuscuQA) - built on OpenTSLM"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [
+    {name = "Fan Wu"},
+    {name = "Tsai-Ning Wang"},
+    {name = "Nicolas Zumarraga"},
+    {name = "Ning Wang"},
+    {name = "Paula Manso Zorrilla"},
+    {name = "Markus Kreft"},
+    {name = "Kevin O'Sullivan"},
+    {name = "Elgar Fleisch"},
+    {name = "Oliver Aalami"},
+    {name = "Paul Schmiedmayer"},
+    {name = "Robert Jakob"},
+    {name = "Patrick Langer"}
+]
+keywords = [
+    "time-series",
+    "large-language-models",
+    "audio",
+    "auscultation",
+    "multimodal",
+    "healthcare"
+]
+
+dependencies = [
+    "numpy>=1.21",
+    "pandas>=1.3",
+    "torch>=2.0",
+    "torchaudio>=2.0.0",
+    "librosa>=0.10.0",
+    "tqdm>=4.62",
+    "matplotlib>=3.3",
+    "scikit-learn>=1.0",
+    "transformers>=4.25",
+    "huggingface-hub>=0.16",
+    "datasets>=2.0",
+    "peft>=0.4",
+    "requests>=2.28",
+    "einops>=0.6",
+    "soundfile>=0.12.0",
+    "audioread>=3.0.0",
+    "open-flamingo>=0.0.2",
+]
+
+[project.urls]
+Repository = "https://github.com/Fan-loewe/AudioTSLM"
+"Bug Tracker" = "https://github.com/Fan-loewe/AudioTSLM/issues"
+"Built on" = "https://github.com/StanfordBDHG/OpenTSLM"
+
+[dependency-groups]
+dev = [
+    "reuse>=6.2.0",
+    "ruff>=0.14.0",
+]
+
+eval = [
+    "openai>=1.0",
+]
+
+notebook = [
+    "jupyter>=1.0",
+    "ipython>=8.0",
+    "seaborn>=0.13.2",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.0,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+required-version = ">=0.9"
+
+[[tool.uv.index]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+publish-url = "https://test.pypi.org/legacy/"
+explicit = true
+
+[tool.uv.workspace]
+members = [
+    "test-install",
+]
+
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"

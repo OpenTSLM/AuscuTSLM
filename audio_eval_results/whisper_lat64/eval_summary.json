@@ -1,0 +1,129 @@
+{
+  "checkpoint": "audio_checkpoints_v5/whisper_lat64/whisper_stage1_caresound_qa/best_model.pt",
+  "encoder": "whisper",
+  "llm_id": "meta-llama/Llama-3.2-1B",
+  "max_audio_length": null,
+  "max_audio_seconds": null,
+  "total_samples": 6496,
+  "open_ended_accuracy": 30.218596059113302,
+  "normalised_accuracy": 31.573275862068968,
+  "contains_match_accuracy": 42.47229064039409,
+  "bert_score_f1": 0.9509182322146417,
+  "bert_score_precision": 0.953162483604891,
+  "bert_score_recall": 0.9491824452109231,
+  "rougeL_f1": 0.6673460240066538,
+  "meteor": 0.6396189345073072,
+  "closed_ended_yes_no": {
+    "accuracy": 0.935043845404352,
+    "f1_macro": 0.8645819589215815,
+    "f1_weighted": 0.9316175132385983,
+    "sensitivity": 0.6811594202898551,
+    "specificity": 0.9822804314329738,
+    "correct": 2879,
+    "evaluated": 3079,
+    "skipped_not_binary_question": 3384,
+    "skipped_not_yes_no": 33,
+    "skipped_cannot_derive_label": 33,
+    "pred_unparseable": 3,
+    "label_counts": {
+      "gold_yes": 483,
+      "gold_no": 2596,
+      "pred_yes": 375,
+      "pred_no": 2704
+    }
+  },
+  "elapsed_seconds": 27611.2032623291,
+  "max_new_tokens": 128,
+  "per_dataset": {
+    "CirCor": {
+      "total": 499,
+      "open_ended_acc": 18.236472945891784,
+      "norm_acc": 18.43687374749499,
+      "contains_match_acc": 21.24248496993988,
+      "rougeL_f1": 0.7047530381624891,
+      "meteor": 0.6905521035629599,
+      "bert_f1": 0.9588957658272707,
+      "yes_no": {
+        "total_binary_qs": 209,
+        "correct": 194,
+        "parseable": 209,
+        "unparseable": 0,
+        "accuracy_all": 92.82296650717703,
+        "accuracy_parseable": 92.82296650717703,
+        "parseable_rate": 100.0,
+        "gold_yes": 26,
+        "gold_no": 183
+      }
+    },
+    "ICBHI": {
+      "total": 4645,
+      "open_ended_acc": 31.216361679224974,
+      "norm_acc": 31.71151776103337,
+      "contains_match_acc": 46.157158234660926,
+      "rougeL_f1": 0.6502236806112913,
+      "meteor": 0.6173383329882863,
+      "bert_f1": 0.947004334341466,
+      "yes_no": {
+        "total_binary_qs": 1785,
+        "correct": 1660,
+        "parseable": 1782,
+        "unparseable": 3,
+        "accuracy_all": 92.99719887955182,
+        "accuracy_parseable": 93.15375982042649,
+        "parseable_rate": 99.83193277310924,
+        "gold_yes": 140,
+        "gold_no": 1645
+      }
+    },
+    "KAUH": {
+      "total": 153,
+      "open_ended_acc": 56.86274509803921,
+      "norm_acc": 89.54248366013073,
+      "contains_match_acc": 91.50326797385621,
+      "rougeL_f1": 0.8959603214505175,
+      "meteor": 0.6719897699607443,
+      "bert_f1": 0.9608868095609877,
+      "yes_no": null
+    },
+    "SPRSound": {
+      "total": 817,
+      "open_ended_acc": 21.664626682986537,
+      "norm_acc": 21.909424724602204,
+      "contains_match_acc": 23.133414932680537,
+      "rougeL_f1": 0.650294481730464,
+      "meteor": 0.6536597988162184,
+      "bert_f1": 0.9573416239336917,
+      "yes_no": {
+        "total_binary_qs": 766,
+        "correct": 710,
+        "parseable": 766,
+        "unparseable": 0,
+        "accuracy_all": 92.68929503916449,
+        "accuracy_parseable": 92.68929503916449,
+        "parseable_rate": 100.0,
+        "gold_yes": 190,
+        "gold_no": 576
+      }
+    },
+    "ZCHSound": {
+      "total": 382,
+      "open_ended_acc": 41.361256544502616,
+      "norm_acc": 44.50261780104712,
+      "contains_match_acc": 47.12041884816754,
+      "rougeL_f1": 0.7715876667774203,
+      "meteor": 0.8010158421835512,
+      "bert_f1": 0.9703584494391037,
+      "yes_no": {
+        "total_binary_qs": 319,
+        "correct": 315,
+        "parseable": 319,
+        "unparseable": 0,
+        "accuracy_all": 98.7460815047022,
+        "accuracy_parseable": 98.7460815047022,
+        "parseable_rate": 100.0,
+        "gold_yes": 127,
+        "gold_no": 192
+      }
+    }
+  }
+}
